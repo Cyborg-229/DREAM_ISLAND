@@ -1,0 +1,92 @@
+body, html {
+    overflow: hidden;
+    margin: 0; 
+    height: 100%; 
+    background: #ccf;
+    background-image: linear-gradient(to bottom, #bcf 0%, #edb 100%);
+}
+
+/*the sea*/
+
+.container1 {
+    position: absolute;
+    bottom: 0;
+    animation: waves 1s infinite linear;
+    width: 100%; 
+    height: 60px; 
+}
+
+.sea {
+    background: #3ac;
+    background-image: linear-gradient(to bottom, #3ac 0%, #05a 94%, #fff 100%);
+    width: 100%; height: 100%;
+    border-top: 4px dotted #5be;
+    transform: scaleX(2);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+/* make the sea move */
+
+@keyframes waves {
+    0%   {left: 0}
+    100% {left: 16px}
+}
+
+/* give a life to my sand*/
+
+.land {
+    margin: 0 auto;
+    width: 600px; 
+    height: 100px;
+    border-radius: 50%;
+    background: #eb4;
+    background-image: linear-gradient(to bottom, #eb4 0%, #962 100%);
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    margin-left: 100px;
+}
+
+/*upload the tree into the land*/
+
+img {
+    position: absolute;
+    bottom: -55px;
+    left: 60%; 
+    margin-left: 100px;
+}
+
+/* drawing the sun*/
+
+.sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    background: #ccf;
+    background-image: linear-gradient(to bottom, #ffd 0%, #dba 100%);
+    box-shadow: 0 0 96px #edb, 0 0 66px #ffd, inset 0 0 66px #fec;
+    opacity: 0.9
+}
+
+/*moving my plane*/
+
+.container2 {
+    position: absolute;
+    animation: fly 15s 1  normal ease-in forwards;
+    top: 550px;
+    left:800px;
+}
+
+.plane {
+    width: 150px;
+    height: 100px;
+}
+
+@keyframes fly {
+    0% { left: -10px; top: 80px;}
+    80% { left: 800px; top: 550px;}
+}

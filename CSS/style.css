@@ -1,0 +1,132 @@
+.main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 5em auto;
+	display: flex;
+}
+.company__info{
+	background-color: #008080;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/*logo*/
+
+.logo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 250px;
+    height: 250px;
+}
+
+/*welcome sentence*/
+
+h4 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+/*form*/
+
+.username {
+    width: 50%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+    width: 50%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.username:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #FAB359, #6CC7F2);
+    border: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #6CC7F2;
+    padding-top: 30px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #6CC7F2;
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+/*@media (min-width:480px) and (max-width:780px)
+{
+  .username {
+      width: 40px;    
+  }
+  .pass {
+      width: 40px;
+  }
+ 
+}*/
